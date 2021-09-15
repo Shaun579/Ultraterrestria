@@ -1,0 +1,49 @@
+type: ItemTurret
+name: Atomic Blaster
+description: Uses radioactive materials to destroy the enemies via powerful blasts.
+health: 2800
+hasItems: true
+hasLiquids: false
+rotateSpeed: 3
+targetAir: true
+targetGround: true
+size: 2
+range: 150
+reloadTime: 20
+shootCone: 3
+ammoUseEffect: none
+recoilAmount: 2
+inaccuracy: 0
+shootSound: laser
+heatColor: 80CB71
+ammoTypes: {
+  thorium: {
+    type: laserBulletType
+    colors: [CB8EBF,F9A3C7,FFFFFF]
+    ammoMultiplier: 1.5
+    length: 100
+    lengthFalloff: 0.7
+    width: 10
+    reloadMultiplier: 1.2
+    statusDuration: 25
+    damage: 150
+    status: radioactive
+  }
+  verdum: {
+    type: laserBulletType
+    colors: [4E904F,80CB71,84F491]
+    statusDuration: 50
+    damage: 250
+    status: radioactive
+  }
+}
+
+requirements: [
+    verdum/250
+    titanium/300
+    graphite/200
+    lead/200
+]
+category: turret
+buildVisibility: shown
+research: lancer

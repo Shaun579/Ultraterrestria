@@ -1,0 +1,70 @@
+type: ItemTurret
+name: Trio
+description: Yeah, it's just a better duo. I guess the Salvo would take this title but screw it.
+size: 2
+health: 500
+range: 140
+xRand: 4
+shootY: 3
+reload: 4
+targetGround: true
+targetAir: true
+shots: 1
+recoil: 1.5
+inaccuracy: 2
+ammoTypes: {
+  copper: {
+    damage: 20
+    speed: 3
+    lifetime: 50
+    ammoMultiplier: 2
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+  graphite: {
+    damage: 35
+    speed: 3
+    lifetime: 50
+    reloadMultiplier: 0.6
+    ammoMultiplier: 4
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+  silicon: {
+    damage: 25
+    speed: 3
+    lifetime: 50
+    reloadMultiplier: 1.5
+    ammoMultiplier: 5
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+  }
+  pyratite: {
+    damage: 30
+    speed: 3
+    splashDamage: 10
+    splashDamageRadius: 2.7
+    lifetime: 50
+    ammoMultiplier: 3
+    height: 8
+    width: 6
+    status: burning
+    frontColor: f68021
+    backColor: f8ad42
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+}
+requirements: [
+  nickel/100
+]
+buildVisibility: shown
+category: turret
+research: duo

@@ -1,0 +1,85 @@
+type: ItemTurret
+name: Eruptor
+description: Obliterates any enemy near it. You could use explosive materials for lasers or you can use hot ones to turn this thing into a flamethrower!
+health: 4000
+hasItems: true
+hasLiquids: false
+rotateSpeed: 6
+targetAir: true
+targetGround: true
+size: 4
+shootY: -10
+range: 400
+reloadTime: 30
+shootCone: 3
+ammoUseEffect: none
+recoilAmount: 4
+inaccuracy: 10
+heatColor: C85C51
+shootSound: eruptor-shoot
+ammoTypes: {
+  pyratite: {
+    type: fireBulletType
+    colorFrom: C85C51
+    colorMid: FF795E
+    colorTo: FFA665
+    ammoMultiplier: 3
+    fireTrailChance: 0.005
+    fireEffectChance: 0.025
+    fireEffectChance2: 0.0025
+    velMin: 5
+    velMax: 9
+    reloadMultiplier: 15
+    statusDuration: 30
+    damage: 100
+    status: burning
+  }
+  solarsilver: {
+    type: fireBulletType
+    colorFrom: F58859
+    colorMid: FFD37F
+    colorTo: FFE4CA
+    ammoMultiplier: 5
+    fireTrailChance: 0.01
+    fireEffectChance: 0.05
+    fireEffectChance2: 0.01
+    velMin: 7
+    velMax: 15
+    reloadMultiplier: 30
+    statusDuration: 75
+    damage: 150
+    status: burning
+  }
+  blast-compound: {
+    type: laserBulletType
+    colors: [C85C51,FF795E,FFA665]
+    statusDuration: 100
+    damage: 500
+    length: 250
+    width: 25
+    reloadMultiplier: 1.2
+    status: melting
+  }
+  radiant-alloy: {
+    type: laserBulletType
+    colors: [F3E979,FFFFA3,FFFFFF]
+    statusDuration: 100
+    damage: 750
+    length: 300
+    reloadMultiplier: 0.8
+    width: 30
+    status: electrified
+  }
+}
+
+requirements: [
+    radiant-alloy/400
+    titanium/500
+    silicon/900
+    shimmering-copper/1500
+    thorium/350
+    lead/1000
+]
+category: turret
+buildVisibility: shown
+research: meltdown

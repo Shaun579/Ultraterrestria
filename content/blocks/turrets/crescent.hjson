@@ -1,0 +1,47 @@
+type: PowerTurret
+name: Crescent
+description: It's a better and cooler arc. It's actually really damn powerful.
+health: 3350
+hasItems: false
+rotateSpeed: 5
+targetAir: true
+targetGround: true
+size: 3
+range: 175
+reloadTime: 15
+powerUse: 3.5
+shootCone: 20
+ammoUseEffect: none
+recoilAmount: 2
+heatColor: CBD97F
+shootSound: plasmaboom
+shootType: {
+    type: basicBulletType
+    backColor: CBD97F
+    frontColor: EDF3A9
+    speed: 5
+    width: 15
+    height: 15
+    lightning: 15
+    lightningColor: CBD97F
+    lightningLengthRand: 20
+    lightningSound: spark
+    lightningType: damageLightning
+    lightningDamage: 50
+    hitSound: spark
+    hitSoundVolume: 3
+    sprite: ultraterrestria-crescent-shot
+    statusDuration: 60
+    damage: 200
+    status: electrified
+}
+
+requirements: [
+    verdum/300
+    titanium/350
+    silicon/250
+    shimmering-lead/200
+]
+category: turret
+buildVisibility: shown
+research: atomic-blaster

@@ -1,0 +1,164 @@
+type: ItemTurret
+name: Cremator
+description: Even better than the eruptor. Just replace the flamethrowers with enormous bombs.
+health: 4820
+hasItems: true
+hasLiquids: false
+rotateSpeed: 10
+targetAir: true
+targetGround: true
+size: 5
+range: 500
+reloadTime: 40
+shootCone: 20
+ammoUseEffect: none
+recoilAmount: 4
+inaccuracy: 0
+heatColor: C85C51
+shootSound: cremator-shoot
+ammoTypes: {
+  surge-alloy: {
+    type: bombBulletType
+    backColor: D99F6B
+    frontColor: F3E979
+    speed: 20
+    reloadMultiplier: 1.1
+    statusDuration: 200
+    damage: 1000
+    sprite: large-bomb
+    spin: 20
+    width: 40
+    height: 40
+    splashDamage: 200
+    splashDamageRadius: 30
+    hitSound: plasmaboom
+    status: electrified
+    despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 60
+            lifetime: 60
+            colorFrom: E8D174
+            colorTo: FFFFA3
+            strokeFrom: 5
+            strokeTo: 0
+          }
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 30
+            length: 30
+            lifetime: 50
+            colorFrom: E8D174
+            colorTo: FFFFA320
+            strokeFrom: 5
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 20
+            lifetime: 20
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: 272727
+            colorTo: 000000
+          }
+        ]
+      }
+    }
+  plastanium: {
+    type: bombBulletType
+    backColor: CBD97F
+    frontColor: EDF3A9
+    speed: 15
+    reloadMultiplier: 1.5
+    damage: 400
+    sprite: large-bomb
+    spin: 30
+    width: 35
+    height: 35
+    splashDamage: 300
+    splashDamageRadius: 50
+    hitSound: plasmaboom
+    despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 60
+            lifetime: 60
+            colorFrom: CBD97F
+            colorTo: EDF3A9
+            strokeFrom: 5
+            strokeTo: 0
+          }
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 15
+            length: 30
+            lifetime: 50
+            colorFrom: CBD97F
+            colorTo: EDF3A920
+            strokeFrom: 5
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 20
+            lifetime: 20
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: 272727
+            colorTo: 000000
+          }
+        ]
+      }
+    }
+ blast-compound: {
+    type: laserBulletType
+    colors: [C85C51,FF795E,FFA665]
+    statusDuration: 100
+    damage: 700
+    length: 300
+    width: 30
+    reloadMultiplier: 1.5
+    status: melting
+  }
+  radiant-alloy: {
+    type: laserBulletType
+    colors: [F3E979,FFFFA3,FFFFFF]
+    statusDuration: 200
+    damage: 1500
+    shootDuration: 200
+    length: 400
+    width: 50
+    status: circuitfailure
+    }
+}
+
+requirements: [
+    radiant-alloy/750
+    shimmering-titanium/1000
+    silicon/1450
+    shimmering-copper/3000
+    beaming-thorium/800
+    shimmering-lead/2700
+]
+category: turret
+buildVisibility: shown
+research: eruptor

@@ -1,0 +1,56 @@
+type: LiquidTurret
+name: Nulldeg Sprayer
+description: Nulldeg is a fake word made of null and degrees, you can see what this means. It can only shoot low temperature liquids, but it's pretty powerful.
+health: 3400
+rotateSpeed: 5
+targetAir: true
+targetGround: true
+size: 3
+range: 200
+reloadTime: 2
+shootCone: 5
+ammoUseEffect: none
+shootEffect: shootLiquid
+recoilAmount: 2
+inaccuracy: 20
+ammoTypes: {
+  cryofluid: {
+    type: liquidBulletType
+    liquid: cryofluid
+    lifetime: 50
+    speed: 5
+    knockback: 2
+    puddleSize: 8
+    orbSize: 5
+    drag: 0.002
+    ammoMultiplier: 1
+    statusDuration: 50
+    damage: 1
+    status: freezing
+  }
+  frigidium: {
+    type: LiquidBulletType
+    liquid: frigidium
+    lifetime: 60
+    speed: 5
+    knockback: 4
+    puddleSize: 12
+    orbSize: 5
+    damage: 3
+    drag: 0.002
+    ammoMultiplier: 2
+    statusDuration: 100
+    status: freezing
+  }
+}
+
+requirements: [
+    shimmering-lead/500
+    metaglass/300
+    titanium/300
+    thorium/150
+    phantomstone/50
+]
+category: turret
+buildVisibility: shown
+research: tsunami
