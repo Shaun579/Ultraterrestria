@@ -1,0 +1,16 @@
+name: Cosmic Drill
+description: It's not the greatest option, but in certain circumstances it will be your only option.
+type: Drill
+size: 2
+tier: 3
+drillTime: 300
+consumes: {
+	power: 2
+}
+requirements: [
+  galactiglass/20
+  graphite/10
+  lead/10
+]
+category: production
+research: pneumatic-drill
