@@ -1,0 +1,7 @@
+type: Item
+name: Shimmering Titanium
+description: Oooooh shiny! (The shimmering variants are only customization... when they're alone.)
+hardness: 3
+cost: 1
+color: 7090EA
+research: titanium

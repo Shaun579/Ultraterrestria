@@ -1,0 +1,7 @@
+type: Item
+name: Shimmering Copper
+description: Oooooh shiny! (The shimmering variants are only customization... when they're alone.)
+hardness: 1
+cost: 0.5
+color: FEB380
+research: copper

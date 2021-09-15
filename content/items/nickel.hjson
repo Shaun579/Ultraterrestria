@@ -1,0 +1,7 @@
+type: Item
+name: Nickel
+description: Similar uses to lead but it's grey, and more liquid uses.
+hardness: 3
+cost: 2
+color: 9B9DAA
+research: copper

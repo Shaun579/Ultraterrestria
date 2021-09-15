@@ -1,0 +1,7 @@
+type: Item
+name: Hallow Marble
+description: Charged with the power of a seventh of a rainbow.
+hardness: 2
+cost: 4
+color: FFBFDA
+research: sand

@@ -1,0 +1,7 @@
+type: Item
+name: Solarsilver
+description: A material similar to silver but emits an almost blinding glow and feels hotter than lava. Be careful when handling this.
+hardness: 5
+cost: 3
+color: FFD37F
+research: phase-fabric

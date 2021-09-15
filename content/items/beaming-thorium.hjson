@@ -1,0 +1,7 @@
+type: Item
+name: Beaming Thorium
+description: It's the same as thorium but more reactive and shiny, similar to the shimmering variants.
+hardness: 1.1
+cost: 4
+color: 995D9A
+research: thorium

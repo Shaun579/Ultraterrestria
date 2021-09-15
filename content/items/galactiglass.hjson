@@ -1,0 +1,7 @@
+type: Item
+name: Galactiglass
+description: Made of the ground it stands on, but it can only be used to it's full potential on gasless planets
+hardness: 5
+cost: 6
+color: 464A61
+research: metaglass

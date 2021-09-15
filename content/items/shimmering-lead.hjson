@@ -1,0 +1,7 @@
+type: Item
+name: Shimmering Lead
+description: Oooooh shiny! (The shimmering variants are only customization... when they're alone.)
+hardness: 1
+cost: 0.7
+color: BF92F9
+research: lead

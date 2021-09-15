@@ -1,0 +1,8 @@
+type: Item
+name: Verdum
+description: Rare metal, barely stronger than titanium and has no neutrons... for some reason.
+hardness: 2
+radioactivity: 0.2
+cost: 5
+color: 80CB71
+research: plastanium

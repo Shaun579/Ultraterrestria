@@ -1,0 +1,7 @@
+type: Item
+name: Moonsand
+description: Unlike materials that are named after what they look like, this can actually only be found on moons!
+hardness: 1
+cost: 1
+color: B2C6D2
+research: sand

@@ -1,0 +1,7 @@
+type: Item
+name: Phantomstone
+description: Great to pair with phase fabric! Not much purpose other than that...
+hardness: 2
+cost: 3
+color: 665C9F
+research: sand

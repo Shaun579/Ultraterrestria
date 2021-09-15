@@ -1,0 +1,7 @@
+type: Item
+name: Radiant Alloy
+description: Imbued with the rage of a thousand stars. Solarsilver can be very useful when combined with this, but be careful
+hardness: 3
+cost: 8
+color: FFFFA3
+research: solarsilver

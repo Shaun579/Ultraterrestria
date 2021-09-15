@@ -1,0 +1,7 @@
+type: Item
+name: Aero-Compound
+description: Mainly for fueling things or building flight units, about as useful as blast compound.
+hardness: 1
+cost: 3
+color: C0ECFF
+research: phantomstone

@@ -1,0 +1,7 @@
+type: Item
+name: Ghastly Gold
+description: Spooky gold! It's damn powerful, pretty much non-radioactive thorium.
+hardness: 4
+cost: 5
+color: FFE4CA
+research: pyratite
