@@ -1,0 +1,35 @@
+type: Reconstructor
+name: Parallel Reconstructor
+description: Just upgrades the units' alters.
+buildVisibility: shown
+size: 5
+constructTime: 500
+consumes: {
+	power: 5
+	items: {
+		items: [
+			silicon/50
+			nickel/30
+			shimmering-lead/20
+			metaglass/20
+		]
+	}
+}
+
+requirements: [
+	spore-pod/50
+	lead/75
+	copper/40
+	graphite/50
+	metaglass/40
+	titanium/20
+]
+
+upgrades: [
+	[charger, blaster]
+	[racnox, sextopod]
+	[atrax, slimer]
+]
+
+category: units
+research: altering-reconstructor

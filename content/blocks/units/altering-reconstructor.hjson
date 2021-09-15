@@ -1,0 +1,34 @@
+type: Reconstructor
+name: Altering Reconstructor
+description: Turns T1s into a new unit.
+buildVisibility: shown
+size: 3
+constructTime: 500
+consumes: {
+	power: 3
+	items: {
+		items: [
+			silicon/20
+			nickel/10
+			graphite/15
+			metaglass/15
+		]
+	}
+}
+
+requirements: [
+	spore-pod/30
+	lead/50
+	copper/30
+	graphite/25
+	metaglass/20
+]
+
+upgrades: [
+	[flare, charger]
+	[crawler, racnox]
+	[dagger, razor]
+]
+
+category: units
+research: additive-reconstructor

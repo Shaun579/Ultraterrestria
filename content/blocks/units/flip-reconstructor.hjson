@@ -1,0 +1,41 @@
+type: Reconstructor
+name: Flip Reconstructor
+description: Makes some... interesting units.
+buildVisibility: shown
+size: 7
+constructTime: 500
+consumes: {
+	power: 8
+	items: {
+		items: [
+			silicon/120
+			nickel/50
+			shimmering-titanium/30
+			metaglass/30
+			lead/70
+		]
+	}
+  liquid: {
+    liquid: cryofluid
+    amount: 0.5
+  }
+}
+
+requirements: [
+	spore-pod/90
+	lead/120
+	copper/100
+	graphite/85
+	titanium/50
+	thorium/20
+]
+
+upgrades: [
+	[blaster, tazer]
+	[sextopod, pulsidex]
+	[pulsidex, aroctanid]
+	[slimer, gloozer]
+]
+
+category: units
+research: parallel-reconstructor
