@@ -1,0 +1,12 @@
+name: Shimmering Lead Wall
+description: Looks like a big square grape!
+type: Wall
+health: 380
+flashHit: true
+flashColor: E1E9F0
+size: 1
+requirements: [
+  shimmering-lead/6
+]
+category: defense
+research: lead-wall

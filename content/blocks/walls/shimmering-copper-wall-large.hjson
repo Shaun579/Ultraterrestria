@@ -1,0 +1,12 @@
+name: Large Shimmering Copper Wall
+description: It's flashy, literally. Spans multiple tiles.
+type: Wall
+health: 1280
+flashHit: true
+flashColor: FFF3D6
+size: 2
+requirements: [
+  shimmering-copper/24
+]
+category: defense
+research: shimmering-copper-wall

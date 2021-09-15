@@ -1,0 +1,10 @@
+name: Shimmering Titanium Wall
+description: There is still a flashier, more powerful and more dangerous material, you know.
+type: Wall
+health: 440
+size: 1
+requirements: [
+  shimmering-titanium/6
+]
+category: defense
+research: titanium-wall

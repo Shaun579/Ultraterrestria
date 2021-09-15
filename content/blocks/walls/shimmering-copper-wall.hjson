@@ -1,0 +1,12 @@
+name: Shimmering Copper Wall
+description: It's flashy, literally.
+type: Wall
+health: 340
+flashHit: true
+flashColor: FFF3D6
+size: 1
+requirements: [
+  shimmering-copper/6
+]
+category: defense
+research: copper-wall

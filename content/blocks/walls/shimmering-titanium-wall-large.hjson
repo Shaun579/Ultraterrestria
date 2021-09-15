@@ -1,0 +1,12 @@
+name: Large Shimmering Titanium Wall
+description: There is still a flashier, more powerful and more dangerous material, you know. Spans multiple tiles.
+type: Wall
+health: 1760
+flashHit: true
+flashColor: C0ECFF
+size: 2
+requirements: [
+  shimmering-titanium/24
+]
+category: defense
+research: shimmering-titanium-wall

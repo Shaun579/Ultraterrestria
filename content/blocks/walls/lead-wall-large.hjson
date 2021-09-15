@@ -1,0 +1,10 @@
+name: Large Lead Wall
+description: It's a bit better than copper I guess. Spans multiple tiles.
+type: Wall
+health: 1520
+size: 2
+requirements: [
+  lead/24
+]
+category: defense
+research: lead-wall

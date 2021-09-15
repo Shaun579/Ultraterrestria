@@ -1,0 +1,12 @@
+name: Beaming Thorium Wall
+description: No, I meant MORE dangerous. This is still pretty cool to have though.
+type: Wall
+health: 800
+flashHit: true
+flashColor: FFFFFF
+size: 1
+requirements: [
+  beaming-thorium/6
+]
+category: defense
+research: thorium-wall

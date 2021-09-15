@@ -1,0 +1,12 @@
+name: Large Beaming Thorium Wall
+description: No, I meant MORE dangerous. This is still pretty cool to have though. Spans multiple tiles.
+type: Wall
+health: 1600
+flashHit: true
+flashColor: FFFFFF
+size: 2
+requirements: [
+  beaming-thorium/24
+]
+category: defense
+research: beaming-thorium-wall
