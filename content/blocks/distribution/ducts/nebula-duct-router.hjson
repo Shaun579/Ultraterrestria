@@ -1,0 +1,10 @@
+type: DuctRouter
+name: Nebula Duct Router
+description: It can reach further than the default one.
+requirements: [
+  galactiglass/5
+  lead/15
+]
+category: distribution
+speed: 10
+research: nebula-duct

@@ -1,0 +1,12 @@
+type: DuctBridge
+name: Nebula Duct Bridge
+description: It can reach further than the default one.
+requirements: [
+  galactiglass/5
+  lead/10
+  graphite/5
+]
+category: distribution
+speed: 10
+range: 8
+research: nebula-duct

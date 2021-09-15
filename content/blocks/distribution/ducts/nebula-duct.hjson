@@ -1,0 +1,10 @@
+type: Duct
+name: Nebula Duct
+description: It's better than the regular ones, at least.
+requirements: [
+  galactiglass/1
+  lead/2
+]
+category: distribution
+speed: 10
+research: conveyor
