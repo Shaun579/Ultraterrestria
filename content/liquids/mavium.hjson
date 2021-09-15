@@ -1,0 +1,9 @@
+type: Liquid
+name: Mavium
+description: Can be pretty helpful in offense.
+temperature: 1
+viscosity: 1
+flammability: 0.1
+explosiveness: 0
+effect: sapped
+color: 6B699C

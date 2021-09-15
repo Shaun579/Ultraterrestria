@@ -1,0 +1,10 @@
+type: Liquid
+name: Frigidium
+description: Colder than cryofluid.
+temperature: 0
+heatCapacity: 2
+viscosity: 0.1
+flammability: 0
+explosiveness: 0
+effect: blizzard
+color: FFFFFF
