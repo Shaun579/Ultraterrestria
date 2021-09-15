@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: "Copper Polisher"
+description: "These polishers give you some nice cosmetic options!"
+itemCapacity: 10
+
+consumes: {
+  power: 3
+  item: copper
+}
+
+outputItem: {
+  item: shimmering-copper
+  amount: 1
+}
+
+size: 2
+hasLiquids: false
+craftTime: 50
+updateEffect: smeltsmoke
+
+requirements: [
+	copper/30
+	lead/20
+	titanium/10
+]
+category: crafting
+research: pneumatic-drill
+idleSound: respawning
+idleSoundVolume: 0.5
+
+

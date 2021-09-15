@@ -1,0 +1,44 @@
+type: GenericCrafter
+name: "Radiant Compressor"
+description: "[red]WARNING: [white]the material this makes is incredibly dangerous, please proceed with caution."
+itemCapacity: 10
+
+consumes: {
+  power: 10
+  items: {
+	items: [
+		solarsilver/1
+		surge-alloy/1
+		phase-fabric/1
+		]
+	}
+  liquid: {
+    liquid: slag
+    amount: 0.5
+  }
+}
+
+outputItem: {
+  item: radiant-alloy
+  amount: 1
+}
+
+size: 3
+hasLiquids: true
+craftTime: 120
+updateEffect: smeltsmoke
+
+requirements: [
+	shimmering-copper/100
+	shimmering-lead/75
+	shimmering-titanium/50
+	beaming-thorium/45
+	nickel/40
+
+]
+category: crafting
+research: solar-forge
+idleSound: respawning
+idleSoundVolume: 0.5
+
+

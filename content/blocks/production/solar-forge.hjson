@@ -1,0 +1,43 @@
+type: GenericCrafter
+name: "Solar Forge"
+description: "Takes some metal, a burning liquid and a flammable material and combines them together to make a rare burning material."
+itemCapacity: 10
+
+consumes: {
+  power: 5
+  items: {
+	items: [
+		coal/1
+		nickel/1
+		]
+	}
+  liquid: {
+    liquid: slag
+    amount: 0.5
+  }
+}
+
+outputItem: {
+  item: solarsilver
+  amount: 1
+}
+
+size: 3
+hasLiquids: true
+craftTime: 75
+updateEffect: smeltsmoke
+
+requirements: [
+	copper/50
+	lead/40
+	titanium/35
+	pyratite/20
+	thorium/20
+	nickel/25
+]
+category: crafting
+research: phase-weaver
+idleSound: respawning
+idleSoundVolume: 0.5
+
+

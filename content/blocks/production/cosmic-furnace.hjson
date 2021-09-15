@@ -1,0 +1,36 @@
+type: GenericCrafter
+name: "Cosmic Furnace"
+description: "It's product is like metaglass but for low gravity."
+itemCapacity: 10
+
+consumes: {
+  power: 5
+  items: {
+	items: [
+		moonsand/1
+		lead/1
+		]
+	}
+}
+
+outputItem: {
+  item: galactiglass
+  amount: 1
+}
+
+size: 3
+hasLiquids: false
+craftTime: 100
+updateEffect: smeltsmoke
+
+requirements: [
+	copper/50
+	lead/30
+	titanium/20
+]
+category: crafting
+research: kiln
+idleSound: respawning
+idleSoundVolume: 0.5
+
+

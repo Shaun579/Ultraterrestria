@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: "Lead Polisher"
+description: "These polishers give you some nice cosmetic options!"
+itemCapacity: 10
+
+consumes: {
+  power: 3
+  item: lead
+}
+
+outputItem: {
+  item: shimmering-lead
+  amount: 1
+}
+
+size: 2
+hasLiquids: false
+craftTime: 50
+updateEffect: smeltsmoke
+
+requirements: [
+	copper/30
+	lead/20
+	titanium/10
+]
+category: crafting
+research: copper-polisher
+idleSound: respawning
+idleSoundVolume: 0.5
+
+

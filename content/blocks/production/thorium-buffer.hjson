@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: "Thorium Buffer"
+description: "Makes some stronger, shinier thorium! Well, stronger when not alone..."
+itemCapacity: 10
+
+consumes: {
+  power: 4
+  item: thorium
+}
+
+outputItem: {
+  item: beaming-thorium
+  amount: 1
+}
+
+size: 2
+hasLiquids: false
+craftTime: 75
+updateEffect: smeltsmoke
+
+requirements: [
+	copper/30
+	lead/20
+	titanium/10
+	thorium/5
+]
+category: crafting
+research: titanium-polisher
+idleSound: respawning
+idleSoundVolume: 0.5
+
+
