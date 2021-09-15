@@ -1,0 +1,5 @@
+type: floor
+name: Hallow Marble
+itemDrop: hallow-marble
+variants: 3
+playerUnmineable: true

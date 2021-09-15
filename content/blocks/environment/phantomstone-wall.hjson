@@ -1,0 +1,6 @@
+type: staticWall
+name: Phantomstone Wall
+breakable: false
+variants: 2
+alwaysReplace: false
+solid: true
