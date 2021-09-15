@@ -1,0 +1,97 @@
+type: legs
+flying: false
+name: Pulsidex
+description: Got it's name from the powerful blasts it makes. At least you don't only have a bunch of sap.
+legCount: 6
+legGroupSize: 3
+legLength: 30
+legSplashDamage: 0.2
+rotateSpeed: 2
+hovering: true
+speed: 0.3
+accel: 0.5
+health: 8400
+research: sextopod
+
+weapons: [
+  {
+    name: pulsidex-blaster
+    top: true
+    rotate: true
+    mirror: false
+    x: 0
+    y: -6
+    reload: 70
+    recoil: 3
+    shootY: 0
+    shootSound: plasmaboom
+    shake: 0.4
+    bullet: {
+      type: LaserBulletType
+      damage: 50
+      collidesTeam: false
+      recoil: 0
+      length: 200
+      width: 40
+      colors: [665C9F, 8A73C6, BF92F9]
+      lightColor: ffffff
+    }
+  }
+  {
+    name: pulsidex-fuse
+    top: true
+    rotate: true
+    mirror: true
+    alternate: true
+    x: 0
+    y: -6
+    reload: 30
+    recoil: 2
+    shots: 3
+    spacing: 20
+    shootSound: shotgun
+    shake: 0.2
+    shootX: 3
+    shootY: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 40
+      length: 90
+      width: 10
+      collidesTeam: false
+      fromColor: 8A73C6
+      toColor: BF92F9
+    }
+  }
+  {
+    name: pulsidex-flame
+    top: false
+    rotate: false
+    mirror: true
+    alternate: false
+    speed: 20
+    x: 14
+    y: 0
+    reload: 1
+    shootCone: 270
+    shots: 2
+    spacing: 5
+    recoil: 2
+    shootY: 2
+    shootSound: flame
+    shake: 0
+    bullet: {
+      type: FireBulletType
+      damage: 20
+      fireTrailChance: 0
+      fireEffectChance: 0
+      fireEffectChance2: 0
+      collidesTeam: false
+      velMin: 3
+      velMax: 6.5
+      colorFrom: 80CB71
+      colorMid: C0ECFF
+      colorTo: FFFFFF
+    }
+  }
+]

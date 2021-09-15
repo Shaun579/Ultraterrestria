@@ -1,0 +1,148 @@
+flying: true
+name: Tazer
+description: Pretty powerful bomber, and also a super powerful close range unit.
+rotateSpeed: 5
+engineOffest: 0
+engineSize: 5
+speed: 3
+commandRadius: 300
+accel: 0.3
+health: 7200
+research: blaster
+
+weapons: [
+  {
+    name: tazer-bombs
+    x: 0
+    y: 0
+    mirror: false
+    reload: 60
+    ignoreRotation: false
+    shootCone: 360
+    minShootVelocity: 1
+    shootSound: plasmadrop
+    bullet: {
+      speed: 0
+      lifetime: 60
+      keepVelocity: false
+      hittable: false
+      absorbable: false
+      collides: false
+      collidesTiles: false
+      splashDamage: 20
+      splashDamageRadius: 25
+      frontColor: C0ECFF
+      backColor: 87CEEB
+      lightColor: C0ECFF
+      sprite: large-bomb
+      height: 50
+      width: 50
+      hitShake: 6
+      spin: 10
+      shrinkX: 0.4
+      shrinkY: 0.4
+      maxRange: 16
+      hitSound: plasmaboom
+      hitEffect: none
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 60
+            lifetime: 60
+            colorFrom: C0ECFF
+            colorTo: 87CEEB
+            strokeFrom: 5
+            strokeTo: 0
+          }
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 15
+            length: 30
+            lifetime: 50
+            colorTo: FFCD6620
+            strokeFrom: 5
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 20
+            lifetime: 20
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: ffa500
+            colorTo: 00000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: tazer-machine
+    top: true
+    rotate: true
+    x: 14
+    y: -2
+    alternate: true
+    reload: 6
+    recoil: 3
+    ignoreRotation: false
+    rotate: false
+    shootY: 4
+    shootCone: 30
+    shootSound: shoot
+    shake: 0.1
+    bullet: artilleryHoming
+   }
+   {
+    name: tazer-machine
+    top: true
+    rotate: true
+    x: -19
+    y: -6
+    flipSprite: true
+    alternate: true
+    reload: 6
+    recoil: 3
+    ignoreRotation: false
+    rotate: false
+    shootY: 4
+    shootCone: 30
+    shootSound: shoot
+    shake: 0.1
+    bullet: artilleryHoming
+   }
+   {
+    name: tazer-tazer
+    top: true
+    rotate: true
+    x: 17
+    y: 6
+    rotateSpeed: 0.1
+    reload: 1
+    recoil: 0
+    ignoreRotation: false
+    rotate: true
+    shootY: 4
+    shootCone: 60
+    shootSound: spark
+    shake: 0
+    bullet: {
+      type: LightningBulletType
+      damage: 30
+      collidesTeam: false
+      recoil: 0
+      lightningColor: aae2ff
+      lightningLength: 20
+      lighningLengthRand: 10
+    }
+  }
+]

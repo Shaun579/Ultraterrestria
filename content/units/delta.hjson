@@ -1,0 +1,92 @@
+flying: true
+name: Delta
+description: Defends the Electron core from enemies. It has bombs and burning bullets.
+rotateSpeed: 7
+engineOffset: 0
+engineSize: 1
+speed: 4
+accel: 0.3
+health: 300
+mineTier: 3
+buildSpeed: 1.5
+mineSpeed: 10
+
+weapons: [
+  {
+    name: delta-bombs
+    x: 0
+    y: 0
+    mirror: false
+    reload: 30
+    ignoreRotation: false
+    shootCone: 360
+    minShootVelocity: 1
+    shootSound: shootbig
+    bullet: {
+      speed: 0
+      lifetime: 40
+      keepVelocity: false
+      hittable: false
+      absorbable: false
+      collides: false
+      collidesTiles: false
+      splashDamage: 10
+      splashDamageRadius: 5
+      frontColor: FFFFA3
+      backColor: FFCD66
+      lightColor: FFCD66
+      sprite: shell
+      height: 10
+      width: 10
+      hitShake: 1
+      spin: 10
+      shrinkX: 0.4
+      shrinkY: 0.4
+      maxRange: 16
+      hitSound: bang
+      hitEffect: none
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 12
+            length: 30
+            lifetime: 30
+            colorTo: FFCD6620
+            strokeFrom: 2
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 10
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: ffa500
+            colorTo: 00000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: delta-smg
+    top: false
+    rotate: false
+    x: 2
+    y: 5
+    reload: 30
+    recoil: 1
+    shootSound: shoot
+    shots: 2
+    shotDelay: 2
+    bullet: missileIncendiary
+  }
+]

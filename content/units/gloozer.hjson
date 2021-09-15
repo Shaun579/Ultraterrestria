@@ -1,0 +1,91 @@
+type: legs
+flying: false
+name: Gloozer
+description: Can leave it's enemies in a sticky situation.
+legLength: 35
+legSplashDamage: 0.2
+rotateSpeed: 3
+hovering: true
+speed: 0.45
+accel: 0.5
+health: 7800
+research: slimer
+
+weapons: [
+  {
+    name: gloozer-slimer
+    top: true
+    rotate: true
+    mirror: true
+    rotateSpeed: 1
+    x: 0
+    y: -5
+    reload: 40
+    recoil: 3
+    shootY: 0
+    shootSound: gloozer-slimer-shot
+    shake: 0
+    bullet: {
+      type: BasicBulletType
+      damage: 70
+      speed: 4
+      width: 20
+      height: 20
+      status: slimed
+      sprite: circle-bullet
+      collidesTeam: false
+      recoil: 0
+      backColor: 363F9A
+      frontColor: 7090EA
+          despawnEffect: {
+          type: ParticleEffect
+          particles: 9
+          line: false
+          length: 20
+          lifetime: 30
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: 7090EA
+          colorTo: 7090EA
+      }
+    }
+  }
+  {
+    name: gloozer-lobber
+    top: true
+    rotate: false
+    alternate: true
+    mirror: true
+    x: 7
+    y: -2
+    reload: 20
+    recoil: 1
+    flipSprite: true
+    shootY: 4
+    shootSound: splash
+    shake: 0
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      width: 10
+      height: 10
+      spin: 10
+      speed: 2
+      sprite: shell
+      collidesTeam: false
+      backColor: 363F9A
+      frontColor: 7090EA
+          despawnEffect: {
+          type: ParticleEffect
+          particles: 5
+          line: false
+          length: 20
+          lifetime: 30
+          sizeFrom: 2
+          sizeTo: 0
+          colorFrom: 7090EA
+          colorTo: 7090EA
+      }
+    }
+  }
+]

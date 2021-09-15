@@ -1,0 +1,51 @@
+type: legs
+flying: false
+name: Racnox
+description: Don't like atrax that much? Try this! It has a little less slag but also a laser beam to make up for that!
+rotateSpeed: 2
+hovering: true
+baseRotateSpeed: 1
+speed: 0.6
+accel: 0.5
+health: 570
+research: crawler
+
+weapons: [
+  {
+    name: racnox-lobber
+    x: 10
+    y: 0
+    mirror: true
+    reload: 15
+    top: false
+    recoil: 0.1
+    alternate: true
+    ignoreRotation: false
+    rotate: false
+    shootCone: 360
+    shootSound: flame
+    bullet: slagShot
+  }
+  {
+    name: racnox-beam
+    top: true
+    rotate: true
+    x: 0
+    y: -3
+    reload: 60
+    recoil: 0
+    shootY: 4
+    shootSound: laser
+    shake: 0.1
+    bullet: {
+      type: LaserBulletType
+      damage: 35
+      collidesTeam: false
+      recoil: 0.5
+      length: 80
+      width: 20
+      colors: [665C9F, 8A73C6, BF92F9]
+      lightColor: ffffff
+    }
+  }
+]

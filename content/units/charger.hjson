@@ -1,0 +1,76 @@
+flying: true
+name: Charger
+description: A unit that is similar to the horizon, but faster. It's also got a bit more health and shoots faster but each bomb is significantly weaker. These are much better in packs.
+rotateSpeed: 15
+baseRotateSpeed: 15
+speed: 6
+accel: 0.3
+health: 380
+research: flare
+
+weapons: [
+  {
+    name: charger-bombs
+    x: 0
+    y: 0
+    mirror: false
+    reload: 5
+    ignoreRotation: false
+    shootCone: 360
+    minShootVelocity: 1
+    shootSound: shootbig
+    bullet: {
+      speed: 0
+      lifetime: 30
+      keepVelocity: false
+      hittable: false
+      absorbable: false
+      collides: false
+      collidesTiles: false
+      splashDamage: 8
+      splashDamageRadius: 20
+      frontColor: FFFFA3
+      backColor: FFCD66
+      lightColor: FFCD66
+      sprite: shell
+      height: 10
+      width: 10
+      hitShake: 3
+      spin: 10
+      shrinkX: 0.4
+      shrinkY: 0.4
+      maxRange: 16
+      hitSound: bang
+      hitEffect: none
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 10
+            length: 30
+            lifetime: 30
+            colorTo: FFCD6620
+            strokeFrom: 1
+            strokeTo: 0
+            lenFrom: 10
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 5
+            length: 20
+            lifetime: 10
+            sizeFrom: 1
+            sizeTo: 4
+            colorFrom: ffa500
+            colorTo: 00000000
+          }
+        ]
+      }
+    }
+  }
+]

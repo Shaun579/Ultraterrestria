@@ -1,0 +1,101 @@
+flying: true
+name: Blaster
+description: It now has LASER BEAMS! Other than that not much has changed, stronger bombs I guess.
+rotateSpeed: 15
+baseRotateSpeed: 15
+commandRadius:225
+engineOffest: 10
+engineSize: 5
+speed: 7
+accel: 0.3
+health: 690
+research: charger
+
+weapons: [
+  {
+    name: blaster-bombs
+    x: 0
+    y: 0
+    mirror: false
+    reload: 10
+    ignoreRotation: false
+    shootCone: 360
+    minShootVelocity: 1
+    shootSound: shootbig
+    bullet: {
+      speed: 0
+      lifetime: 40
+      keepVelocity: false
+      hittable: false
+      absorbable: false
+      collides: false
+      collidesTiles: false
+      splashDamage: 20
+      splashDamageRadius: 25
+      frontColor: FFFFA3
+      backColor: FFCD66
+      lightColor: FFCD66
+      sprite: shell
+      height: 15
+      width: 15
+      hitShake: 4
+      spin: 10
+      shrinkX: 0.4
+      shrinkY: 0.4
+      maxRange: 16
+      hitSound: bang
+      hitEffect: none
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 12
+            length: 30
+            lifetime: 30
+            colorTo: FFCD6620
+            strokeFrom: 2
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 10
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: ffa500
+            colorTo: 00000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: blaster-laser
+    top: true
+    rotate: true
+    x: 7
+    y: 1
+    reload: 15
+    recoil: 0.2
+    shootY: 4
+    shootSound: laser
+    shake: 0.1
+    bullet: {
+      type: LaserBulletType
+      damage: 30
+      collidesTeam: false
+      recoil: 0
+      length: 40
+      width: 15
+      colors: [D06B53, FFA665, FEB380]
+      lightColor: ffffff
+    }
+  }
+]

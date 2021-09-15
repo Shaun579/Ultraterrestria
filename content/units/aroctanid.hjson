@@ -1,0 +1,169 @@
+type: legs
+flying: false
+name: Aroctanid
+description: 8 legs and 8x the power.
+legCount: 8
+legGroupSize: 2
+legLength: 75
+legSplashDamage: 1
+rotateSpeed: 2
+hovering: true
+speed: 0.3
+accel: 0.5
+health: 23500
+research: pulsidex
+
+weapons: [
+  {
+    name: aroctanid-lobber
+    top: false
+    rotate: false
+    mirror: true
+    alternate: true
+    x: 19
+    y: 0
+    reload: 100
+    recoil: 5
+    shootY: 3
+    heatColor: 8A73C6
+    shootSound: aroctanid-lobber-shot
+    shake: 1
+    bullet: {
+      type: BombBulletType
+      sprite: ultraterrestria-aroctanid-lob
+      damage: 300
+      speed: 10
+      lifetime: 80
+      collidesTeam: false
+      recoil: 2
+      height: 35
+      width: 35
+      spin: 20
+      shrinkY: 0
+      splashDamage: 60
+      splashDamageRadius: 40
+      backColor: 665C9F
+      frontColor: 8A73C6
+      lightColor: BF92F9
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 120
+        effects: [
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 60
+            lifetime: 60
+            colorFrom: 665C9F
+            colorTo: 8A73C6
+            strokeFrom: 5
+            strokeTo: 0
+          }
+        
+          {
+            type: ParticleEffect
+            line: true
+            particles: 30
+            length: 30
+            lifetime: 50
+            colorFrom: 8A73C6
+            colorTo: BF92F920
+            strokeFrom: 5
+            strokeTo: 0
+            lenFrom: 15
+            lenTo: 2
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 20
+            lifetime: 20
+            sizeFrom: 1
+            sizeTo: 5
+            colorFrom: 272727
+            colorTo: 000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: aroctanid-blaster
+    top: true
+    rotate: true
+    mirror: true
+    alternate: true
+    rotateSpeed: 3
+    x: 4
+    y: -6
+    reload: 30
+    recoil: 2
+    heatColor: 8A73C6
+    shootSound: laser
+    shake: 0.5
+    shots: 3
+    spacing: 5
+    shotDelay: 5
+    shootY: 8
+    bullet: {
+      type: LaserBulletType
+      damage: 80
+      length: 130
+      width: 20
+      collidesTeam: false
+      colors: [665C9F,8A73C6,BF92F9]
+    }
+  }
+  {
+    name: aroctanid-launcher
+    top: false
+    rotate: false
+    mirror: false
+    reload: 30
+    recoil: 0
+    heatColor: 8A73C6
+    shootSound: missile
+    shootCone: 360
+    shake: 0.2
+    shots: 2
+    spacing: 2
+    shotDelay: 5
+    shootY: 13
+    shootX: -6
+    bullet: {
+      type: MissileBulletType
+      sprite: ultraterrestria-aroctanid-missile
+      speed: 6
+      damage: 40
+      trailLength: 4
+      trailColor: 8A73C6
+      trailChance: 1
+      width: 15
+      weaveMag: 12
+      weaveScale: 3
+      height: 15
+      collidesTeam: false
+      backColor: 665C9F
+      frontColor: 8A73C6
+      fragBullets: 5
+      fragCone: 360
+      fragBullet: {
+        type: RailBulletType
+        damage: 10
+        length: 50
+        pierceDamageFactor: 5
+        pierceEffect: none
+        updateEffectSeg: 10
+        updateEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 35
+          sizeFrom: 10
+          sizeTo: 0
+          region: ultraterrestria-aroctanid-missile-blast-trail
+        }
+      }
+    }
+  }
+]

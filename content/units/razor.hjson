@@ -1,0 +1,35 @@
+type: mech
+flying: false
+name: Razor
+description: Who needs flamethrowers when you can have salvos?.
+rotateSpeed: 6
+baseRotateSpeed: 5
+hovering: false
+speed: 0.8
+accel: 0.5
+health: 550
+research: dagger
+
+weapons: [
+  {
+    name: razor-salvo
+    top: false
+    rotate: false
+    mirror: true
+    x: 4.5
+    y: 0
+    reload: 20
+    recoil: 1
+    shootY: 1
+    shootSound: shoot
+    shake: 0
+    alternate: true
+    shots: 3
+    shotDelay: 3
+    bullet: {
+      type: BasicBulletType
+      damage: 30
+      collidesTeam: false
+    }
+  }
+]
